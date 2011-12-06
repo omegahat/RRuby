@@ -1,0 +1,12 @@
+import(methods)
+importFrom("methods", "coerce")
+
+useDynLib(RRuby)
+exportPattern(".*")
+exportClasses("RubyObject", "RubyClass", "RubyModule")
+
+exportMethods("[[", "coerce", "$", "names", "coerce", "length")
+
+exportMethods("methodNames")
+
+

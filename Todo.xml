@@ -1,0 +1,89 @@
+<topics>
+
+<topic>
+<item>
+Call regular functions.
+How do we get access to them - what object do they reside in?
+The Kernel?
+
+Can get something with method(:name). But this is a DATA type.
+</item>
+
+
+<item>
+Ruby methods as arguments to R's apply or general lambdas.
+</item>
+
+<item>
+Get method objects. Is a symbol a name or an object representing the method object?
+Do we have to access the RCLASS_M_TBL() object of the class
+</item>
+
+<item>
+R functions as arguments to Ruby functions (e.g. iterators).
+<br/>
+Need to look at Proc's (and blocks).
+</item>
+
+<item>
+Converter that leaves the array and hash as a references without converting
+their elements.
+Then define lapply(), sapply(), length(), [[, etc.
+<br/>
+sapply() not done yet. others are
+</item>
+
+<item>
+Attaching the Ruby namespace in R's search() path and be able
+to use the objects directly.
+</item>
+
+<item>
+Exception handling and seg-faulting.
+</item>
+
+<item>
+Deal with homogeneous types in arrays/hashes converting to R type.
+</item>
+
+<item>
+load Ruby modules
+<br/>
+.RubyRequire is there. Do we need more?
+</item>
+
+<item status="done">
+Creating new objects.
+<br/>
+Can eval the string class.new, e.g.
+  <r:expr>.RubyEval(paste(className, "new", sep = "."))</r:expr>
+but what about passing arguments?
+Does Ruby allow this or have a separate initialization.
+<br/>
+rb_class_new_instance should be the thing we need.
+</item>
+
+
+<item status="done">
+get Class name from a RubyClass object.
+<br/>
+<r:expr>classObj$name()</r:expr>
+</item>
+
+
+
+<item status="done">
+names(RubyObject) method to get the @fields
+</item>
+
+
+<item status="complete">
+Convert Ruby hash objects to R.
+<br/>
+  approximately done
+</item>
+
+
+</topic>
+</topics>
+

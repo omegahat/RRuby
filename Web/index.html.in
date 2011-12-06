@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<link rel="stylesheet" href="../OmegaTech.css"/>
+<title>@PKG_NAME@</title>
+</head>
+
+<body>
+<h1>@PKG_NAME@</h1>
+<p align=right><a href="@TAR_FILE@">@TAR_FILE@</a> (@DATE@)</p>
+
+This package is an initial and currently partially complete
+bi-directional interface between the R and Ruby programming languages.
+At present, this allows R users to access Ruby functionality.
+We plan to merge this with RSRuby (see below) to provide
+the other side of the bi-directionality.
+
+<p>
+The motivation for this package was to illustrate how
+to construct an inter-system interface between R and another language.
+
+
+<h3>Software Download</h3>
+<a href="@TAR_FILE@">@TAR_FILE@</a>
+
+
+
+<h3>Alternative Approaches</h3>
+<dl>
+  <dt>
+  <li> <a href="http://rubyforge.org/projects/rsruby/">RSRuby</a> by
+      Alex Gutteridge.
+  <dd> This is essentially a uni-directional  interface allowing Ruby
+      users to call R functions.  The design is in the spirit
+      of our inter-system interface and we plan on integrating the
+      code from this package with the code from RSRuby to complete
+      the bi-directional nature of the interface.
+
+  <dt>
+  <li> <a href="http://www.stat.tamu.edu/~dahl/software/">RinRuby</a>  by David Dahl.
+  <dd>  This uses sockets to connect separate R and Ruby processes.
+  This is a useful approach but quite different.
+  It potentially allows for distributed communication across machines.
+  Unfortunately it does not deal with security, life-span and cleanup
+  issues.
+  It also  requires the Ruby programmer to write R commands/syntax. It does not attempt to
+  provide the kind of interface that we pursue which tries to
+  transparently merge the languages and symbols so that programmers
+  in each language treat the functionality provided by the other
+  as if it were local/native
+       
+       
+</dl>
+
+
+<hr>
+<address><a href="http://www.stat.ucdavis.edu/~duncan">Duncan Temple Lang</a>
+<a href=mailto:duncan@wald.ucdavis.edu>&lt;duncan@wald.ucdavis.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sun Jun 28 17:07:25 PDT 2009
+<!-- hhmts end -->
+</body> </html>

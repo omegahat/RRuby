@@ -1,0 +1,14 @@
+Package: RRuby
+Version: 0.1-0
+Title: Calling Ruby from R
+Description: An initial exploration in calling Ruby from R.
+ This will be combined with Alex Gutteride's rsruby for calling R from Ruby
+ to provide a complete bi-directional interface.
+ The motivation for this is to illustrate the general design of our
+ inter-system interfaces.
+Author: Duncan Temple Lang
+Depends: methods
+Imports: methods
+Maintainer: Duncan Temple Lang <duncan@r-project.org>
+License: BSD
+
